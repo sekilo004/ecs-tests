@@ -13,7 +13,7 @@ public class MTax implements Constant {
         List<String> errorList = new ArrayList<>();
 
         if (xTaxList != null && xTaxList.size() > 0) {
-            errorList = Validate(xTaxList, errorList);
+            errorList = ValidateIds(xTaxList, errorList);
         }
         return errorList;
     }
