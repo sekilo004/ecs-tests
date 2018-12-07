@@ -1,6 +1,9 @@
+package mtax;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 
 public class MTax implements Constant {
 
@@ -18,7 +21,7 @@ public class MTax implements Constant {
         return errorList;
     }
 
-    private static List<String> ValidateIds(List<X_Tax> xTaxtList, List<String> errorList) {
+    public static List<String> ValidateIds(List<X_Tax> xTaxList, List<String> errorList) {
         List<String> validIds = new ArrayList<>();
         int cont = 0;
         for (X_Tax tax : xTaxList) {
@@ -57,5 +60,13 @@ public class MTax implements Constant {
             }
         }
         return errorList;
+    }
+
+    public void test(){
+
+    }
+
+    private static List<X_Tax> TaxsByListId(List<String> validIds, Boolean validation){
+        return null;
     }
 }
